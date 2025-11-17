@@ -1,0 +1,89 @@
+/* Fullscreen background container */
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* Centers everything horizontally */
+  gap: 60px;                    /* Space between card and text */
+  
+  height: 100vh;                /* Full screen height */
+  width: 100%;                  /* Full width */
+  
+  padding: 40px;
+  margin: 0;
+
+  background-image: url('https://wallpapers.com/images/hd/most-common-fruits-and-vegetables-qi4dvwvcbhr5g1r5.jpg');
+  background-size: cover;       /* Perfect full-screen image */
+  background-position: center;  /* Center image */
+  background-repeat: no-repeat; /* No repeating */
+}
+
+/* White card */
+.register-card {
+  width: 350px;
+  background: #ffffffdd;        /* Slight transparency looks better */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1b8647;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-btn:hover {
+  background: #176d3a;
+}
+
+/* Right-side text */
+.register-right {
+  text-align: left;         /* normal on desktop */
+  color: white;
+}
+
+.register-right h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.register-right ul {
+  margin-top: 20px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .register-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .register-right {
+    text-align: center;
+  }
+}
