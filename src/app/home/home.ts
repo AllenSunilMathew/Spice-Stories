@@ -19,7 +19,9 @@ api=inject(ApiService)
 
 // lifecycle
 
-
+ngOnInit(){
+  this.getAllRecipes()
+}
 
 
 

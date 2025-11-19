@@ -1,6 +1,7 @@
 import { provideZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
+import { HttpClient } from '@angular/common/http';
 
 describe('App', () => {
   beforeEach(async () => {

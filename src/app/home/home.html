@@ -25,60 +25,19 @@
         <div class="row my-3">
             <!-- duplicate -->
             <div class="col-lg-4">
+                @for (recipe of allRecipes; track $index) {
                 <div class="p-3">
-                    <div style="height: 300px;"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNToWL7FKIcpPaO43JYgqDrj7an1FCjSwNQw&s  "
-                            style="background-size: cover;" class="card-img-top h-100" alt="recipie"></div>
+                    <div style="height: 300px;">
+                        <img [src]=" recipe.image " style="background-size: cover;"
+                            class="card-img-top h-100" alt="recipie"></div>
                     <div class="card-body">
-                        <h5 class="card-title">Recipe name</h5>
+                        <h5 class="card-title">{{recipe.name}}</h5>
                     </div>
                 </div>
+                }
+
             </div>
-            <div class="col-lg-4">
-                <div class="p-3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCQtioqZytbeIZ0wn2aXf4xEYsYc26C-Odg&s"
-                        class="card-img-top" alt="recipie">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe name</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="p-3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCQtioqZytbeIZ0wn2aXf4xEYsYc26C-Odg&s"
-                        class="card-img-top" alt="recipie">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe name</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="p-3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCQtioqZytbeIZ0wn2aXf4xEYsYc26C-Odg&s"
-                        class="card-img-top" alt="recipie">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe name</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="p-3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCQtioqZytbeIZ0wn2aXf4xEYsYc26C-Odg&s"
-                        class="card-img-top" alt="recipie">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe name</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="p-3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCQtioqZytbeIZ0wn2aXf4xEYsYc26C-Odg&s"
-                        class="card-img-top" alt="recipie">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe name</h5>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <!-- recipie banner -->
