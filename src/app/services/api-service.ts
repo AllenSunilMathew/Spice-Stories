@@ -7,10 +7,12 @@ import { inject, Injectable } from '@angular/core';
 export class ApiService {
    http=inject(HttpClient)
    serverUrl="http//localhost:3000"
+  
 
    //get all recipes
 
    getAllRecipesAPI(){
-return this.http.get(`${this.serverUrl}/recipes/all`)
+return this.http.get(`${this.serverUrl}/all-recipes`)
+
    }
 }

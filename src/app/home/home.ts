@@ -3,7 +3,6 @@ import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import { RouterLink } from "@angular/router";
 import { ApiService } from '../services/api-service';
-import { log } from 'console';
 
 @Component({
   selector: 'app-home',
@@ -31,7 +30,7 @@ ngOnInit(){
 // user defined func
 getAllRecipes(){
   this.api.getAllRecipesAPI().subscribe((res:any)=>{
-    this.allRecipes=res.slice(0,0)
+    this.allRecipes=res.slice(0,6)
     console.log(this.allRecipes);
     
   })
